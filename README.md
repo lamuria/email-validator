@@ -1,4 +1,7 @@
 # email-validator [![Build Status](https://travis-ci.org/lamuria/email-validator.svg?branch=master)](https://travis-ci.org/lamuria/email-validator)
 Simple Clojure Library to validate email format with RFC2822 rules
 
-This is a very simple library to validate emails
+## Usage
+``` clojure
+(is-email? "marcoslamuria@gmail.com") ; => true
+```
