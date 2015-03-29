@@ -8,6 +8,5 @@
 (defn is-email?
   "Check if input is a valid email address"
   [input]
-  (if (nil? input)
-    false
+  (when input
     (match-regex? input #"(?i)[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")))
